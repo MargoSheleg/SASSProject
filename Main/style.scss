@@ -1,0 +1,33 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b3764;
+  .headerAndMain {
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .pages {
+        max-width: 119px;
+        max-height: 35px;
+      }
+      .buttons {
+        text-align: center;
+        .navigation {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
