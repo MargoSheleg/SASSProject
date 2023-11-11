@@ -6,18 +6,14 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: $thisBlue;
-}
-// =========================HEADER======================================
-.headerAndMain {
-  margin: 4%;
-  display: flex;
-  flex-direction: column;
-  gap: 15vh;
+.padd {
+  padding: 4%;
 }
 
+// =========================HEADER==================================
+
 header {
+  background-color: $thisBlue;
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 2fr 10fr 1.7fr;
   gap: 1%;
@@ -67,110 +63,11 @@ header {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-// ===================MAIN=================================
+// ========================MAIN====================================
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-}
-.welcomeToPages {
-  display: grid;
-  grid-template-rows: 2fr 1fr 3fr 0.7fr 3fr 2.5fr 2fr;
-  align-content: center;
-}
-
-h2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: $color;
-}
-
-h1 {
-  font-size: 64px;
-  color: $color;
-}
-
-.welcomeToPages {
-  p {
-    color: $color;
-    @include w400sz21;
-  }
-}
-
-.btnA {
-  a {
-    @include w400sz19;
-  }
-}
-
-.btnA {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 4%;
-}
-
-.welcomeToPages {
-  ul {
-    li {
-      dl {
-        color: $color;
-      }
-    }
-  }
-}
-
-.welcomeToPages {
-  ul {
-    li {
-      dl {
-        dt {
-          color: $color;
-          @include w400sz24;
-        }
-      }
-    }
-  }
-}
-
-.welcomeToPages {
-  ul {
-    li {
-      dl {
-        dd {
-          @include w400sz17;
-        }
-      }
-    }
-  }
-}
-
-.welcomeToPages {
-  ul {
-    li {
-      list-style-image: url(../images/dot.png);
-    }
-  }
-}
-
-.welcomeToPages {
-  ul {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10%;
-    padding-left: 3%;
-  }
-}
-
-// =============================FOOTER=================================
-
+// ===========================FOOTER=================================
 footer {
+  background-color: $thisBlue;
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr 2fr;
 }

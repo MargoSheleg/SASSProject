@@ -5,23 +5,12 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #1b3764;
-}
-
-.headerAndMain {
-  margin: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15vh;
+.padd {
+  padding: 4%;
 }
 
 header {
+  background-color: #1b3764;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.2fr 1% 1.2fr 1% 2fr 1% 10fr 1% 1.7fr;
@@ -84,104 +73,8 @@ header {
   padding-bottom: 2%;
 }
 
-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-.img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.welcomeToPages {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 2fr 1fr 3fr 0.7fr 3fr 2.5fr 2fr;
-  grid-template-rows: 2fr 1fr 3fr 0.7fr 3fr 2.5fr 2fr;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-h1 {
-  font-size: 64px;
-  color: white;
-}
-
-.welcomeToPages p {
-  color: white;
-  font-weight: 400;
-  font-size: 21px;
-}
-
-.btnA a {
-  font-weight: 400;
-  font-size: 19px;
-}
-
-.btnA {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 4%;
-}
-
-.welcomeToPages ul li dl {
-  color: white;
-}
-
-.welcomeToPages ul li dl dt {
-  color: white;
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.welcomeToPages ul li dl dd {
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.welcomeToPages ul li {
-  list-style-image: url(../images/dot.png);
-}
-
-.welcomeToPages ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 10%;
-  padding-left: 3%;
-}
-
 footer {
+  background-color: #1b3764;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr 1.5fr 2fr;

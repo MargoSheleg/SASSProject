@@ -1,0 +1,42 @@
+$SmallText: 18px;
+$SmallerText: 17px;
+$color: white;
+$thisYellow: #ffca42;
+$thisBlue: #1b3764;
+$thisAzure: #b4c7e7;
+
+@mixin button {
+  font-weight: 400;
+  font-size: 19px;
+  width: 222px;
+  height: 66px;
+}
+
+@mixin w400sz17 {
+  // color: $color;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+@mixin w400sz18 {
+  // color: $color;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@mixin w400sz19 {
+  // color: $color;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+@mixin w400sz21 {
+  font-weight: 400;
+  font-size: 21px;
+}
+
+@mixin w400sz24 {
+  // color: $color;
+  font-weight: 400;
+  font-size: 24px;
+}
