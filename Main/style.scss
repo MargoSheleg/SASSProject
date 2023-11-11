@@ -8,26 +8,152 @@
 
 body {
   background-color: #1b3764;
-  .headerAndMain {
-    margin: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .pages {
-        max-width: 119px;
-        max-height: 35px;
-      }
-      .buttons {
-        text-align: center;
-        .navigation {
-          text-decoration: none;
-        }
+}
+
+.headerAndMain {
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 2fr 10fr 1.7fr;
+  gap: 1%;
+  align-items: center;
+}
+
+.pagesIcon {
+  max-width: 119px;
+  max-height: 35px;
+  white-space: nowrap;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.navigation {
+  a {
+    text-decoration: none;
+    color: $color;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+  }
+}
+
+.threeBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+.threeBtnContainer {
+  .threeBtn {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+.orderToday {
+  background-color: #ffca42;
+  border: none;
+  color: #1b3764;
+  @include button;
+  white-space: nowrap;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+}
+
+.welcomeToPages {
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr 0.7fr 3fr 2.5fr 2fr;
+  align-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color;
+}
+
+h1 {
+  font-size: 64px;
+  color: $color;
+}
+
+.welcomeToPages {
+  p {
+    color: $color;
+    font-size: $SmallText;
+  }
+}
+
+.btnA {
+  a {
+    color: $color;
+    font-weight: 400;
+    font-size: 19px;
+  }
+}
+
+.btnA {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4%;
+}
+
+ul {
+  li {
+    dl {
+      color: $color;
+    }
+  }
+}
+
+ul {
+  li {
+    dl {
+      dt {
+        font-weight: 400;
+        font-size: 24px;
       }
     }
   }
+}
+
+ul {
+  li {
+    dl {
+      dd {
+        font-weight: 400;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+ul {
+  li {
+    list-style-image: url(images/dot.png);
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+  padding-left: 3%;
 }
