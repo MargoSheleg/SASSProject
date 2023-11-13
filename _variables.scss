@@ -40,3 +40,12 @@ $thisAzure: #b4c7e7;
   font-weight: 400;
   font-size: 24px;
 }
+
+@mixin forBefore {
+  color: $thisBlue;
+  background-color: $thisYellow;
+  border-radius: 50%;
+  padding: 3%;
+  position: absolute;
+  bottom: 140%;
+}

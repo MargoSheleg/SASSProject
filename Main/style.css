@@ -136,6 +136,8 @@ h1 {
 .btnA a {
   font-weight: 400;
   font-size: 19px;
+  text-decoration: underline;
+  color: white;
 }
 
 .btnA {

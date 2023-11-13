@@ -6,6 +6,7 @@
 }
 
 header {
+  padding: 4%;
   background-color: #1b3764;
   display: -ms-grid;
   display: grid;
@@ -15,7 +16,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4%;
 }
 
 .pagesIcon {
@@ -70,112 +70,81 @@ header {
   padding-bottom: 2%;
 }
 
-main {
-  background-color: white;
-  margin: 3%;
-}
-
 h1 {
   color: #1b3764;
+  font-weight: 400;
+  font-style: 42px;
   text-align: center;
-  padding: 3%;
-}
-
-.books {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   padding: 4%;
 }
 
-.book {
+.dexcription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 4%;
+  gap: 4%;
 }
 
-.book ul li {
-  list-style-position: inside;
-  color: #1b3764;
+.dexcription div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr 2fr 2fr;
+  grid-template-rows: 4fr 2fr 2fr;
+  max-width: 313px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.name {
   font-weight: 400;
   font-size: 24px;
-  list-style-image: url(/images/yellowDot.png);
-}
-
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2%;
-}
-
-.bookName {
   color: #1b3764;
-  font-weight: 400;
-  font-size: 32px;
 }
 
-.price {
-  color: #ffca42;
-  font-weight: 400;
-  font-size: 21px;
-}
-
-.descript {
+.desc {
   color: #969aa0;
   font-weight: 400;
   font-size: 19px;
-  max-width: 287px;
+  text-align: center;
 }
 
 .secondArticle {
-  padding: 4%;
+  background-color: #1b3764;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4%;
+  margin-bottom: 0.1%;
 }
 
-.aboutAuthor {
+.text {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
-  grid-template-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
-  padding: 3%;
+  -ms-grid-rows: 1fr 0.7fr 1fr;
+  grid-template-rows: 1fr 0.7fr 1fr;
+  padding: 4%;
 }
 
 h2 {
-  color: #1b3764;
+  color: white;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 54px;
 }
 
-.secondArticle p {
-  max-width: 559px;
+.text p {
   font-weight: 400;
   font-size: 19px;
-  color: #969aa0;
-}
-
-.QR {
-  background-color: #1b3764;
-  padding: 2%;
+  color: #b4c7e7;
+  max-width: 539px;
 }
 
 footer {

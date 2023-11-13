@@ -7,6 +7,7 @@
 
 header {
   background-color: #1b3764;
+  padding: 4%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.2fr 1% 1.2fr 1% 2fr 1% 10fr 1% 1.7fr;
@@ -15,7 +16,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4%;
 }
 
 .pagesIcon {
@@ -70,117 +70,165 @@ header {
   padding-bottom: 2%;
 }
 
-main {
-  background-color: white;
-  margin: 3%;
-}
-
 h1 {
-  color: #1b3764;
+  font-weight: 400;
+  font-size: 42px;
   text-align: center;
-  padding: 3%;
+  color: #1b3764;
+  padding-top: 8%;
 }
 
-.books {
+.points {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 4%;
+}
+
+.points > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.points > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.points > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.points > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.pointsAndImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 4%;
+  padding: 6%;
 }
 
-.book {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.book ul li {
-  list-style-position: inside;
+.points p {
+  max-width: 303px;
+  max-height: 272px;
   color: #1b3764;
   font-weight: 400;
   font-size: 24px;
-  list-style-image: url(/images/yellowDot.png);
+  position: relative;
+  text-align: left;
+  margin: 5%;
 }
 
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2%;
-}
-
-.bookName {
+#one::before {
+  content: "01";
   color: #1b3764;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.price {
-  color: #ffca42;
-  font-weight: 400;
-  font-size: 21px;
-}
-
-.descript {
-  color: #969aa0;
-  font-weight: 400;
-  font-size: 19px;
-  max-width: 287px;
-}
-
-.secondArticle {
-  padding: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15vw;
-}
-
-.aboutAuthor {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
-  grid-template-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
+  background-color: #ffca42;
+  border-radius: 50%;
   padding: 3%;
+  position: absolute;
+  bottom: 140%;
+}
+
+#two::before {
+  content: "02";
+  color: #1b3764;
+  background-color: #ffca42;
+  border-radius: 50%;
+  padding: 3%;
+  position: absolute;
+  bottom: 140%;
+}
+
+#three::before {
+  content: "03";
+  color: #1b3764;
+  background-color: #ffca42;
+  border-radius: 50%;
+  padding: 3%;
+  position: absolute;
+  bottom: 140%;
+}
+
+#four::before {
+  content: "04";
+  color: #1b3764;
+  background-color: #ffca42;
+  border-radius: 50%;
+  padding: 3%;
+  position: absolute;
+  bottom: 140%;
 }
 
 h2 {
   color: #1b3764;
   font-weight: 400;
   font-size: 42px;
+  text-align: center;
 }
 
-.secondArticle p {
-  max-width: 559px;
+.threeGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5% 1fr 1.5% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5%;
+  padding: 6%;
+}
+
+.artName {
+  font-weight: 400;
+  font-size: 24px;
+  color: #1b3764;
+  text-align: left;
+}
+
+.article {
   font-weight: 400;
   font-size: 19px;
   color: #969aa0;
 }
 
-.QR {
-  background-color: #1b3764;
-  padding: 2%;
+.date {
+  text-align: right;
+  color: #1b3764;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.text {
+  padding: 8%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 7% 3fr 7% 0.5fr;
+  grid-template-rows: 2fr 3fr 0.5fr;
+  gap: 7%;
+}
+
+.threeGrid div {
+  -webkit-box-shadow: 4px 4px 10px rgb(238, 237, 237);
+          box-shadow: 4px 4px 10px rgb(238, 237, 237);
+  max-width: 420px;
+  max-height: 622px;
+  border-radius: 5px;
 }
 
 footer {
-  padding: 4%;
   background-color: #1b3764;
+  padding: 4%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr 1.5fr 2fr;

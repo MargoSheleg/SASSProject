@@ -5,16 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-// =========================HEADER==================================
-
+// =========================HEADER======================================
 header {
   background-color: $thisBlue;
+  padding: 4%;
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 2fr 10fr 1.7fr;
   gap: 1%;
   align-items: center;
-  padding: 4%;
 }
 
 .pagesIcon {
@@ -60,96 +58,111 @@ header {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-// ========================MAIN====================================
-main {
-  background-color: $color;
-  margin: 3%;
-}
-
+// ===================MAIN=================================
 h1 {
-  color: $thisBlue;
+  font-weight: 400;
+  font-size: 42px;
   text-align: center;
-  padding: 3%;
+  color: $thisBlue;
+  padding-top: 8%;
 }
-
-.books {
-  display: flex;
-  justify-content: space-evenly;
+.points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   padding: 4%;
 }
 
-.book {
+.pointsAndImg {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 6%;
 }
-.book {
-  ul {
-    li {
-      list-style-position: inside;
-      color: $thisBlue;
-      @include w400sz24;
-      list-style-image: url(/images/yellowDot.png);
-    }
+.points {
+  p {
+    max-width: 303px;
+    max-height: 272px;
+    color: $thisBlue;
+    @include w400sz24;
+    position: relative;
+    text-align: left;
+    margin: 5%;
   }
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2%;
+#one::before {
+  content: "01";
+  @include forBefore;
 }
 
-.bookName {
-  color: $thisBlue;
-  font-weight: 400;
-  font-size: 32px;
+#two::before {
+  content: "02";
+  @include forBefore;
 }
 
-.price {
-  color: $thisYellow;
-  @include w400sz21;
+#three::before {
+  content: "03";
+  @include forBefore;
 }
 
-.descript {
-  color: #969aa0;
-  @include w400sz19;
-  max-width: 287px;
-}
-
-.secondArticle {
-  padding: 4%;
-  display: flex;
-  justify-content: center;
-  gap: 15vw;
-}
-.aboutAuthor {
-  display: grid;
-  grid-template-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
-  padding: 3%;
+#four::before {
+  content: "04";
+  @include forBefore;
 }
 
 h2 {
   color: $thisBlue;
   font-weight: 400;
   font-size: 42px;
+  text-align: center;
 }
-.secondArticle {
-  p {
-    max-width: 559px;
-    @include w400sz19;
-    color: #969aa0;
-  }
-}
-.QR {
-  background-color: $thisBlue;
-  padding: 2%;
+.threeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 1.5%;
+  padding: 6%;
 }
 
-// ===========================FOOTER=================================
+.artName {
+  @include w400sz24;
+  color: $thisBlue;
+  text-align: left;
+}
+
+.article {
+  @include w400sz19;
+  color: #969aa0;
+}
+
+.date {
+  text-align: right;
+  color: $thisBlue;
+  @include w400sz19;
+}
+
+.text {
+  padding: 8%;
+  display: grid;
+  grid-template-rows: 2fr 3fr 0.5fr;
+  gap: 7%;
+}
+
+.threeGrid {
+  div {
+    box-shadow: 4px 4px 10px rgb(238, 237, 237);
+    max-width: 420px;
+    max-height: 622px;
+    border-radius: 5px;
+  }
+}
+// =============================FOOTER=================================
+
 footer {
-  padding: 4%;
   background-color: $thisBlue;
+  padding: 4%;
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr 2fr;
 }

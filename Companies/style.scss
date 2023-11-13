@@ -5,16 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-// =========================HEADER==================================
-
+// ==============================HEADER====================================
 header {
+  padding: 4%;
   background-color: $thisBlue;
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 2fr 10fr 1.7fr;
   gap: 1%;
   align-items: center;
-  padding: 4%;
 }
 
 .pagesIcon {
@@ -60,93 +58,68 @@ header {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-// ========================MAIN====================================
-main {
-  background-color: $color;
-  margin: 3%;
-}
-
+//   ========================================== MAIN=============
 h1 {
   color: $thisBlue;
+  font-weight: 400;
+  font-style: 42px;
   text-align: center;
-  padding: 3%;
-}
-
-.books {
-  display: flex;
-  justify-content: space-evenly;
   padding: 4%;
 }
-
-.book {
+.dexcription {
   display: flex;
   justify-content: space-between;
+  padding: 4%;
+  gap: 4%;
 }
-.book {
-  ul {
-    li {
-      list-style-position: inside;
-      color: $thisBlue;
-      @include w400sz24;
-      list-style-image: url(/images/yellowDot.png);
-    }
+.dexcription {
+  div {
+    display: grid;
+    grid-template-rows: 4fr 2fr 2fr;
+    max-width: 313px;
+    align-items: center;
+    justify-items: center;
   }
+}
+
+.name {
+  @include w400sz24;
+  color: $thisBlue;
+  // text-align: center;
+}
+
+.desc {
+  color: #969aa0;
+  @include w400sz19;
+  text-align: center;
+}
+
+.secondArticle {
+  background-color: $thisBlue;
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  margin-bottom: 0.1%;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2%;
-}
-
-.bookName {
-  color: $thisBlue;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.price {
-  color: $thisYellow;
-  @include w400sz21;
-}
-
-.descript {
-  color: #969aa0;
-  @include w400sz19;
-  max-width: 287px;
-}
-
-.secondArticle {
-  padding: 4%;
-  display: flex;
-  justify-content: center;
-  gap: 15vw;
-}
-.aboutAuthor {
   display: grid;
-  grid-template-rows: 1fr 1.3fr 2.5fr 2.5fr 2.5fr;
-  padding: 3%;
+  grid-template-rows: 1fr 0.7fr 1fr;
+  padding: 4%;
 }
-
 h2 {
-  color: $thisBlue;
+  color: $color;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 54px;
 }
-.secondArticle {
+.text {
   p {
-    max-width: 559px;
     @include w400sz19;
-    color: #969aa0;
+    color: #b4c7e7;
+    max-width: 539px;
   }
 }
-.QR {
-  background-color: $thisBlue;
-  padding: 2%;
-}
-
-// ===========================FOOTER=================================
+// =============================FOOTER=================================
 footer {
   padding: 4%;
   background-color: $thisBlue;

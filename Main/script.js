@@ -1,10 +1,17 @@
-const author = document.querySelector("#author");
+import { changePage, makeYellow } from "../scripts/helpers";
+import {
+  home,
+  author,
+  companies,
+  articles,
+  homePathName,
+  authorPathName,
+  companiesPathName,
+  articlesPathName,
+} from "../scripts/utils";
 
-author.addEventListener("click", () => {
-  window.location.href = "/Author/author.html";
-});
+author.addEventListener("click", changePage(authorPathName));
+companies.addEventListener("click", changePage(companiesPathName));
+articles.addEventListener("click", changePage(articlesPathName));
 
-const aHome = document.querySelector("#home");
-if ((window.location.href = "/Main/main.html")) {
-  aHome.style.color = "#FFCA42";
-}
+home.style.color = "#ffca42";

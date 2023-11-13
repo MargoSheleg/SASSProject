@@ -106,6 +106,8 @@ h1 {
 .btnA {
   a {
     @include w400sz19;
+    text-decoration: underline;
+    color: $color;
   }
 }
 
