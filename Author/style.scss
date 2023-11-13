@@ -67,7 +67,7 @@ main {
 }
 
 h1 {
-  color: $thisBlue;
+  @include forH1;
   text-align: center;
   padding: 3%;
 }
@@ -112,7 +112,7 @@ h1 {
 }
 
 .descript {
-  color: #969aa0;
+  color: $thisGray;
   @include w400sz19;
   max-width: 287px;
 }
@@ -130,15 +130,13 @@ h1 {
 }
 
 h2 {
-  color: $thisBlue;
-  font-weight: 400;
-  font-size: 42px;
+  @include forH1;
 }
 .secondArticle {
   p {
     max-width: 559px;
     @include w400sz19;
-    color: #969aa0;
+    color: $thisGray;
   }
 }
 .QR {

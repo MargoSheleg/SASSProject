@@ -60,10 +60,8 @@ header {
 }
 // ===================MAIN=================================
 h1 {
-  font-weight: 400;
-  font-size: 42px;
+  @include forH1;
   text-align: center;
-  color: $thisBlue;
   padding-top: 8%;
 }
 .points {
@@ -113,9 +111,7 @@ h1 {
 }
 
 h2 {
-  color: $thisBlue;
-  font-weight: 400;
-  font-size: 42px;
+  @include forH1;
   text-align: center;
 }
 .threeGrid {
@@ -134,7 +130,7 @@ h2 {
 
 .article {
   @include w400sz19;
-  color: #969aa0;
+  color: $thisGray;
 }
 
 .date {

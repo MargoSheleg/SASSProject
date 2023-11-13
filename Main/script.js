@@ -1,4 +1,4 @@
-import { changePage, makeYellow } from "../scripts/helpers";
+import { changePage } from "../scripts/helpers.js";
 import {
   home,
   author,
@@ -8,10 +8,16 @@ import {
   authorPathName,
   companiesPathName,
   articlesPathName,
-} from "../scripts/utils";
+} from "../scripts/utils.js";
 
-author.addEventListener("click", changePage(authorPathName));
-companies.addEventListener("click", changePage(companiesPathName));
-articles.addEventListener("click", changePage(articlesPathName));
+author.addEventListener("click", () => {
+  changePage(authorPathName);
+});
+companies.addEventListener("click", () => {
+  changePage(companiesPathName);
+});
+articles.addEventListener("click", () => {
+  changePage(articlesPathName);
+});
 
 home.style.color = "#ffca42";

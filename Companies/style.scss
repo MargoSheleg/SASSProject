@@ -60,9 +60,7 @@ header {
 }
 //   ========================================== MAIN=============
 h1 {
-  color: $thisBlue;
-  font-weight: 400;
-  font-style: 42px;
+  @include forH1;
   text-align: center;
   padding: 4%;
 }
@@ -89,7 +87,7 @@ h1 {
 }
 
 .desc {
-  color: #969aa0;
+  color: $thisGray;
   @include w400sz19;
   text-align: center;
 }

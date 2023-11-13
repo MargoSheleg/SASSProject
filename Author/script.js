@@ -1,16 +1,23 @@
-const aAuthor = document.querySelector("#author");
-if (window.location.pathname === "/Author/author.html") {
-  aAuthor.style.color = "#FFCA42";
-}
+import { changePage } from "../scripts/helpers.js";
+import {
+  home,
+  author,
+  companies,
+  articles,
+  homePathName,
+  authorPathName,
+  companiesPathName,
+  articlesPathName,
+} from "../scripts/utils.js";
 
-// TO HOME
-const home = document.querySelector("#home");
 home.addEventListener("click", () => {
-  window.location.pathname = "../Main/main.html";
+  changePage(homePathName);
+});
+companies.addEventListener("click", () => {
+  changePage(companiesPathName);
+});
+articles.addEventListener("click", () => {
+  changePage(articlesPathName);
 });
 
-// TO COMPANIES
-const companies = document.querySelector("#companies");
-companies.addEventListener("click", () => {
-  window.location.pathname = "../Companies/companies.html";
-});
+author.style.color = "#FFCA42";

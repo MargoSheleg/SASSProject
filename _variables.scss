@@ -4,6 +4,7 @@ $color: white;
 $thisYellow: #ffca42;
 $thisBlue: #1b3764;
 $thisAzure: #b4c7e7;
+$thisGray: #969aa0;
 
 @mixin button {
   font-weight: 400;
@@ -39,6 +40,12 @@ $thisAzure: #b4c7e7;
   // color: $color;
   font-weight: 400;
   font-size: 24px;
+}
+
+@mixin forH1 {
+  color: $thisBlue;
+  font-weight: 400;
+  font-size: 42px;
 }
 
 @mixin forBefore {
